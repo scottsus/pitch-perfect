@@ -4,10 +4,20 @@ import java.util.concurrent.TimeUnit;
 
 public class PitchPerfect {
     public static void main(String[] args) {
+        System.out.println("ARGS:");
+        for (String arg : args)
+            System.out.println(arg);
+        if (args.length != 2) {
+            System.out.println("Incorrect number of arguments. Expected 3, got " + args.length);
+            System.out.println(
+                    "Execution instructions: javac PitchPerfect.java && java PitchPerfect {filename.txt} topics.txt");
+            return;
+        }
         int numTeams = 6;
         List<String> names, topics;
         try {
-            File namesFile = new File("./RhoClass.txt");
+            String namesFileName = args[0];
+            File namesFile = new File("./" + namesFileName);
             BufferedReader namesBr = new BufferedReader(new FileReader(namesFile));
             int N = Integer.valueOf(namesBr.readLine());
             names = new LinkedList<>();
@@ -15,7 +25,8 @@ public class PitchPerfect {
                 names.add(namesBr.readLine());
             namesBr.close();
 
-            File topicsFile = new File("./Topics.txt");
+            String topicsFileName = args[1];
+            File topicsFile = new File("./" + topicsFileName);
             BufferedReader topicsBr = new BufferedReader(new FileReader(topicsFile));
             int M = Integer.valueOf(topicsBr.readLine());
             topics = new LinkedList<>();
