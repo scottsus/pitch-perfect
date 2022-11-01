@@ -5,7 +5,7 @@ It has been a longstanding SEP tradition for new members to pitch about seemingl
 
 ## Usage
 ```
-javac PitchPerfect.Java && java PitchPerfect < {filename}.txt
+javac PitchPerfect.Java && java PitchPerfect {filename}.txt topics.txt
 ```
 
 ### May the best team win! 🚀🚀
