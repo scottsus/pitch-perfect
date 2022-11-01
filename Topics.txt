@@ -1,0 +1,15 @@
+14
+In N Out,Shake Shack
+Osmond,Emma
+CS Major,BA Major
+Timon Sun,Arnold Schwarzenegger
+Ian Wong,Roger Federer
+Tom,Jerry
+Dora,Diego
+Jordan,Lebron
+Fix it Felix,Bob the Builder
+Tobey Maguire,Tom Holland
+Chris Hemsworth,Chris Pratt
+Gordon Ramsay,Guy Fieri
+Monkey,Cat
+blondes,brunettes
